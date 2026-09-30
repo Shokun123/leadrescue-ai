@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://shokun123.github.io/leadrescue-ai/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%22100%22%20height=%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23F0B90B%22 stroke-width=%222%22><path d=%22M13 2L3 14h9l-1 8 10-12h-9l1-8z%22 fill=%22%23F0B90B%22/></svg>">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -109,8 +109,10 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-3">
         <a href="#" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-yellow to-yellow-500 flex items-center justify-center font-bold text-black text-xl shadow-lg shadow-brand-yellow/20 group-hover:scale-105 transition-transform">
-            ⚡
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-yellow to-yellow-500 flex items-center justify-center font-bold text-black shadow-lg shadow-brand-yellow/20 group-hover:scale-105 transition-transform">
+            <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
           </div>
           <div>
             <div class="flex items-center gap-1.5">
@@ -134,7 +136,9 @@
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Motor IA Activo
         </div>
         <button onclick="openCheckout()" class="bg-gradient-to-r from-brand-yellow to-amber-400 hover:from-yellow-400 hover:to-brand-yellow text-black font-bold text-xs px-4 sm:px-5 py-2.5 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-lg shadow-brand-yellow/20 flex items-center gap-1.5">
-          <span>⚡</span>
+          <svg class="w-3.5 h-3.5 text-black" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
           <span>Suite Pro ($19 USDT)</span>
         </button>
       </div>
@@ -146,7 +150,7 @@
     <div class="text-center max-w-3xl mx-auto mb-10">
       <div class="mb-4">
         <a href="https://github.com/Shokun123/google-maps-b2b-lead-scraper" target="_blank" class="inline-flex items-center gap-2 text-xs font-medium text-gray-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 px-4 py-1.5 rounded-full transition-all group">
-          <span class="text-brand-yellow font-bold">🎁 Nuevo Recurso:</span>
+          <span class="text-brand-yellow font-bold">Nuevo Recurso:</span>
           <span>Descarga bases de datos B2B gratis con nuestro Google Maps Lead Extractor</span>
           <span class="text-brand-yellow group-hover:translate-x-0.5 transition-transform">→</span>
         </a>
@@ -167,14 +171,14 @@
     <div class="mb-8 max-w-4xl mx-auto">
       <div class="flex items-center justify-between mb-3 px-1">
         <span class="text-xs font-bold uppercase tracking-wider text-gray-400 flex items-center gap-1.5">
-          <span>🏢</span> Selecciona tu Industria para Autocalibrar:
+          <svg class="w-3.5 h-3.5 text-brand-yellow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Selecciona tu Industria para Autocalibrar:
         </span>
         <span class="text-[11px] text-brand-yellow/90 font-medium">Valores benchmark precargados</span>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
         <button type="button" onclick="setIndustry('marketing')" id="btn-marketing" class="industry-chip group bg-brand-card hover:bg-brand-cardHover border border-brand-yellow/40 bg-brand-yellow/10 text-white rounded-xl p-3 text-left transition-all duration-200 shadow-sm">
           <div class="flex items-center justify-between">
-            <span class="text-base sm:text-lg">🎯</span>
+            <svg class="w-5 h-5 text-brand-yellow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M22 12A10 10 0 0 0 12 2v10z"/><circle cx="12" cy="12" r="4"/></svg>
             <span class="text-[10px] font-mono text-brand-yellow font-bold uppercase">Agencias</span>
           </div>
           <p class="text-xs font-bold text-white mt-1.5 truncate">Marketing & Media</p>
@@ -183,7 +187,7 @@
 
         <button type="button" onclick="setIndustry('health')" id="btn-health" class="industry-chip group bg-brand-card hover:bg-brand-cardHover border border-brand-border text-gray-400 hover:text-white rounded-xl p-3 text-left transition-all duration-200">
           <div class="flex items-center justify-between">
-            <span class="text-base sm:text-lg">🩺</span>
+            <svg class="w-5 h-5 text-gray-400 group-hover:text-brand-yellow transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             <span class="text-[10px] font-mono text-gray-400 font-bold uppercase">Clínicas</span>
           </div>
           <p class="text-xs font-bold text-white mt-1.5 truncate">Salud & Estética</p>
@@ -192,7 +196,7 @@
 
         <button type="button" onclick="setIndustry('realestate')" id="btn-realestate" class="industry-chip group bg-brand-card hover:bg-brand-cardHover border border-brand-border text-gray-400 hover:text-white rounded-xl p-3 text-left transition-all duration-200">
           <div class="flex items-center justify-between">
-            <span class="text-base sm:text-lg">🏢</span>
+            <svg class="w-5 h-5 text-gray-400 group-hover:text-brand-yellow transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><path d="M10 22v-4h4v4"/></svg>
             <span class="text-[10px] font-mono text-gray-400 font-bold uppercase">Inmobiliaria</span>
           </div>
           <p class="text-xs font-bold text-white mt-1.5 truncate">Real Estate & Lujo</p>
@@ -201,7 +205,7 @@
 
         <button type="button" onclick="setIndustry('saas')" id="btn-saas" class="industry-chip group bg-brand-card hover:bg-brand-cardHover border border-brand-border text-gray-400 hover:text-white rounded-xl p-3 text-left transition-all duration-200">
           <div class="flex items-center justify-between">
-            <span class="text-base sm:text-lg">💻</span>
+            <svg class="w-5 h-5 text-gray-400 group-hover:text-brand-yellow transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             <span class="text-[10px] font-mono text-gray-400 font-bold uppercase">SaaS B2B</span>
           </div>
           <p class="text-xs font-bold text-white mt-1.5 truncate">Software & Tech</p>
@@ -219,7 +223,9 @@
 
         <div class="flex items-center justify-between mb-6">
           <h2 class="text-lg font-bold text-white flex items-center gap-2">
-            <span class="w-8 h-8 rounded-lg bg-brand-yellow/10 border border-brand-yellow/20 flex items-center justify-center text-brand-yellow text-sm">📊</span>
+            <span class="w-8 h-8 rounded-lg bg-brand-yellow/10 border border-brand-yellow/20 flex items-center justify-center text-brand-yellow">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </span>
             Parámetros Comerciales
           </h2>
           <span class="text-[11px] text-gray-400 bg-[#0B0E11] px-2.5 py-1 rounded-md border border-brand-border">Ajuste Dinámico</span>
@@ -235,7 +241,9 @@
               <input type="text" id="companyName" placeholder="ej. Apex Growth Agency / apexagency.com" 
                 class="w-full bg-[#0B0E11] border border-brand-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow transition"
                 oninput="updateCalculation()">
-              <div class="absolute right-3 top-3 text-gray-500 text-xs">🏢</div>
+              <div class="absolute right-3 top-3.5 text-gray-500 pointer-events-none">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/><line x1="9" y1="14" x2="9" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/><path d="M10 22v-4h4v4"/></svg>
+              </div>
             </div>
           </div>
 
@@ -314,7 +322,7 @@
           <div class="bg-[#08090C]/60 border border-brand-border/70 rounded-xl p-4 mb-5">
             <div class="flex justify-between items-center text-xs mb-2">
               <span class="font-bold text-gray-300 flex items-center gap-1.5">
-                <span>🌡️</span> Termómetro de Riesgo Speed-to-Lead
+                <svg class="w-4 h-4 text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg> Termómetro de Riesgo Speed-to-Lead
               </span>
               <span id="riskLevelText" class="font-mono text-[11px] font-bold text-red-400">Fuga Crítica (+3h)</span>
             </div>
@@ -345,7 +353,7 @@
                 <div id="harvardProgressBar" class="h-full bg-gradient-to-r from-red-500 to-amber-500 rounded-full transition-all duration-500" style="width: 18%;"></div>
               </div>
               <p id="harvardAdvice" class="text-[11px] text-gray-400 mt-2 leading-relaxed">
-                🚨 <strong class="text-gray-200">Impacto crítico:</strong> Responder tras 3 horas destruye casi 4 de cada 5 oportunidades ganadas. El prospecto ya contactó a un proveedor más veloz.
+                <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-red-400 inline-block flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> <strong class="text-gray-200">Impacto crítico:</strong> Responder tras 3 horas destruye casi 4 de cada 5 oportunidades ganadas. El prospecto ya contactó a un proveedor más veloz.</span>
               </p>
             </div>
           </div>
@@ -370,15 +378,15 @@
         <div class="mt-6 pt-5 border-t border-brand-border">
           <div class="flex flex-col sm:flex-row gap-3">
             <button onclick="openCheckout()" class="flex-1 bg-gradient-to-r from-brand-yellow to-amber-400 hover:from-yellow-400 hover:to-brand-yellow text-black font-extrabold py-3.5 px-5 rounded-xl transition duration-200 flex items-center justify-center gap-2 shadow-lg shadow-brand-yellow/20 text-xs sm:text-sm">
-              <span>⚡</span> Desbloquear Suite Pro ($19 USDT)
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Desbloquear Suite Pro ($19 USDT)
             </button>
             <button onclick="downloadAuditReport()" class="bg-white/10 hover:bg-white/20 text-white font-bold py-3.5 px-4 rounded-xl border border-white/15 transition flex items-center justify-center gap-2 text-xs" title="Descargar informe de auditoría completo">
-              <span>📄</span> Reporte 1-Clic
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Reporte 1-Clic
             </button>
           </div>
 
           <p class="text-[11px] text-center text-gray-400 mt-2.5">
-            🔒 Licencia perpetua. Sin suscripciones mensuales. Entrega digital instantánea vía Binance Pay.
+            <span class="inline-flex items-center gap-1"><svg class="w-3 h-3 text-emerald-400 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Licencia perpetua. Sin suscripciones mensuales. Entrega digital instantánea vía Binance Pay.</span>
           </p>
 
           <!-- Social Share Bar (PLG Growth Engine) -->
@@ -386,10 +394,10 @@
             <span class="text-[11px] text-gray-400 font-medium">Compartir auditoría:</span>
             <div class="flex gap-2">
               <button onclick="shareOnTwitter()" class="bg-[#1DA1F2]/10 hover:bg-[#1DA1F2]/20 text-[#1DA1F2] border border-[#1DA1F2]/30 px-3 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition">
-                <span>𝕏</span> X (Twitter)
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> X (Twitter)
               </button>
               <button onclick="shareOnWhatsApp()" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition">
-                <span>💬</span> WhatsApp
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.17 1.6 5.99L0 24l6.23-1.63a11.95 11.95 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.12-6.22-3.52-8.43zM12.06 21.87h-.01c-1.8 0-3.56-.48-5.11-1.39l-.37-.22-3.79.99 1.01-3.69-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.49 4.47-9.96 9.97-9.96 2.66 0 5.16 1.04 7.04 2.92a9.92 9.92 0 0 1 2.92 7.04c0 5.49-4.47 9.9-9.9 9.9z"/></svg> WhatsApp
               </button>
             </div>
           </div>
@@ -546,7 +554,7 @@
           
           <div class="flex items-center justify-between mt-3">
             <button onclick="simulateAI()" class="bg-white/10 hover:bg-white/20 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition border border-white/15 flex items-center gap-2 shadow-sm">
-              <span>🤖</span> Analizar Lead con IA
+              <svg class="w-4 h-4 text-brand-yellow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> Analizar Lead con IA
             </button>
             <span class="text-[10px] text-gray-500 font-mono">Modelo: Gemini 1.5 Flash Free</span>
           </div>
@@ -656,11 +664,13 @@
   <!-- Checkout / Payment Modal with Binance Pay -->
   <div id="checkoutModal" class="fixed inset-0 bg-black/85 backdrop-blur-md hidden z-50 flex items-center justify-center p-4 overflow-y-auto">
     <div class="bg-brand-card border border-brand-border rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl my-8">
-      <button onclick="closeCheckout()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg w-8 h-8 rounded-full bg-white/5 flex items-center justify-center transition">✕</button>
+      <button onclick="closeCheckout()" class="absolute top-4 right-4 text-gray-400 hover:text-white w-8 h-8 rounded-full bg-white/5 flex items-center justify-center transition" aria-label="Cerrar">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
 
       <div class="text-center mb-6">
-        <div class="w-12 h-12 rounded-2xl bg-brand-yellow/10 border border-brand-yellow/30 mx-auto flex items-center justify-center text-2xl mb-3 shadow-lg shadow-brand-yellow/10">
-          🟡
+        <div class="w-12 h-12 rounded-2xl bg-brand-yellow/10 border border-brand-yellow/30 mx-auto flex items-center justify-center text-brand-yellow mb-3 shadow-lg shadow-brand-yellow/10">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
         <h3 class="text-2xl font-black text-white tracking-tight">Desbloqueo Suite Pro</h3>
         <p class="text-xs text-gray-400 mt-1">Liquidación directa a través del ecosistema Binance</p>
@@ -672,8 +682,8 @@
           <span class="text-[11px] text-gray-400 block uppercase font-mono">Total a liquidar</span>
           <span class="text-2xl sm:text-3xl font-black text-white font-mono">19.00 <span class="text-brand-yellow">USDT</span></span>
         </div>
-        <span class="text-[11px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full font-bold">
-          ✓ Licencia Vitalicia
+        <span class="text-[11px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full font-bold flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Licencia Vitalicia
         </span>
       </div>
 
@@ -701,7 +711,7 @@
               <span class="text-white font-mono text-base font-black tracking-wide" id="binanceUidText">1049392123</span>
             </div>
             <button onclick="copyUid()" class="bg-brand-yellow hover:bg-yellow-400 text-black px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
-              <span>📋</span> Copiar UID
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copiar UID
             </button>
           </div>
 
@@ -763,7 +773,9 @@
   <footer class="border-t border-brand-border/60 bg-[#08090C] px-6 py-8 text-center text-xs text-gray-400 max-w-7xl mx-auto w-full">
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 max-w-5xl mx-auto mb-4">
       <div class="flex items-center gap-2">
-        <span class="text-brand-yellow font-bold text-sm">⚡ LeadRescue AI</span>
+        <span class="text-brand-yellow font-bold text-sm flex items-center gap-1.5">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> LeadRescue AI
+        </span>
         <span class="text-gray-500">·</span>
         <span class="text-gray-400 text-[11px]">Infraestructura Serverless a $0 de costo mensual</span>
       </div>
@@ -779,16 +791,19 @@
     </p>
     <div class="mt-4 pt-4 border-t border-brand-border/40 flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[11px] text-gray-400">
       <span class="text-gray-500 font-bold uppercase tracking-wider text-[10px]">Herramientas del Ecosistema:</span>
-      <a href="https://github.com/Shokun123/google-maps-b2b-lead-scraper" target="_blank" class="hover:text-brand-yellow transition flex items-center gap-1">
-        <span>🗺️ Google Maps B2B Extractor</span>
+      <a href="https://github.com/Shokun123/google-maps-b2b-lead-scraper" target="_blank" class="hover:text-brand-yellow transition flex items-center gap-1.5 group">
+        <svg class="w-3.5 h-3.5 text-gray-400 group-hover:text-brand-yellow transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+        <span>Google Maps B2B Extractor</span>
       </a>
       <span class="text-gray-600">·</span>
-      <a href="https://github.com/Shokun123/ai-pr-reviewer-action" target="_blank" class="hover:text-brand-yellow transition flex items-center gap-1">
-        <span>🔍 AI PR Reviewer GitHub Action</span>
+      <a href="https://github.com/Shokun123/ai-pr-reviewer-action" target="_blank" class="hover:text-brand-yellow transition flex items-center gap-1.5 group">
+        <svg class="w-3.5 h-3.5 text-gray-400 group-hover:text-brand-yellow transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <span>AI PR Reviewer GitHub Action</span>
       </a>
       <span class="text-gray-600">·</span>
-      <a href="https://github.com/Shokun123" target="_blank" class="hover:text-brand-yellow transition flex items-center gap-1">
-        <span>👤 Shokun123 Hub</span>
+      <a href="https://github.com/Shokun123" target="_blank" class="hover:text-brand-yellow transition flex items-center gap-1.5 group">
+        <svg class="w-3.5 h-3.5 text-gray-400 group-hover:text-brand-yellow transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Shokun123 Hub</span>
       </a>
     </div>
   </footer>
@@ -924,7 +939,7 @@
         harvardProb.className = 'font-mono font-bold text-emerald-400 text-xs';
         harvardBar.style.width = '91%';
         harvardBar.className = 'h-full bg-emerald-500 rounded-full transition-all duration-500';
-        advice.innerHTML = '✨ <strong class="text-gray-200">Excelente velocidad:</strong> Respondes en menos de 5 minutos. Estás en el 5% superior de empresas según Harvard Business Review.';
+        advice.innerHTML = '<span class="text-emerald-400 font-bold">[ÓPTIMO]</span> <strong class="text-gray-200">Excelente velocidad:</strong> Respondes en menos de 5 minutos. Estás en el 5% superior de empresas según Harvard Business Review.';
       } else if (factor <= 0.35) {
         // Moderate Risk (30 min - 2h)
         marker.style.left = '45%';
@@ -936,7 +951,7 @@
         harvardProb.className = 'font-mono font-bold text-amber-400 text-xs';
         harvardBar.style.width = '38%';
         harvardBar.className = 'h-full bg-amber-500 rounded-full transition-all duration-500';
-        advice.innerHTML = '⚠️ <strong class="text-gray-200">Fuga moderada:</strong> Responder entre 30 min y 2 horas reduce drásticamente el interés. Los leads ya están abriendo pestañas de tu competencia.';
+        advice.innerHTML = '<span class="text-amber-400 font-bold">[RIESGO]</span> <strong class="text-gray-200">Fuga moderada:</strong> Responder entre 30 min y 2 horas reduce drásticamente el interés. Los leads ya están abriendo pestañas de tu competencia.';
       } else {
         // Critical Leak (>3h, 24h, weekend)
         const pct = factor >= 0.8 ? '94%' : (factor >= 0.65 ? '88%' : '75%');
@@ -951,7 +966,7 @@
         harvardProb.className = 'font-mono font-bold text-red-400 text-xs';
         harvardBar.style.width = prob;
         harvardBar.className = 'h-full bg-gradient-to-r from-red-500 to-amber-500 rounded-full transition-all duration-500';
-        advice.innerHTML = '🚨 <strong class="text-gray-200">Impacto crítico:</strong> Responder tras 3 horas destruye casi 4 de cada 5 oportunidades ganadas. El prospecto ya resolvió su necesidad con otra empresa.';
+        advice.innerHTML = '<span class="text-red-400 font-bold">[CRÍTICO]</span> <strong class="text-gray-200">Impacto crítico:</strong> Responder tras 3 horas destruye casi 4 de cada 5 oportunidades ganadas. El prospecto ya resolvió su necesidad con otra empresa.';
       }
     }
 
@@ -979,7 +994,7 @@
             > Acción autónoma: ${config.aiAction}
           </p>
         `;
-        showToast('✓ Lead clasificado y optimizado en 0.38s');
+        showToast('Lead clasificado y optimizado en 0.38s');
       }, 550);
     }
 
@@ -1043,7 +1058,9 @@
 
       toast.className = `${bgColor} ${borderColor} ${textColor} border px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-xs font-medium flex items-center gap-2.5 transform translate-y-4 opacity-0 transition-all duration-300 pointer-events-auto`;
       toast.innerHTML = `
-        <span class="text-brand-yellow text-sm font-bold">⚡</span>
+        <span class="text-brand-yellow flex-shrink-0">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
         <span>${message}</span>
       `;
 
@@ -1068,7 +1085,7 @@
       const uid = '1049392123';
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(uid).then(() => {
-          showToast('✓ Binance UID 1049392123 copiado al portapapeles');
+          showToast('Binance UID 1049392123 copiado al portapapeles');
         }).catch(() => {
           fallbackCopyText(uid);
         });
@@ -1086,7 +1103,7 @@
       textArea.select();
       try {
         document.execCommand('copy');
-        showToast('✓ Binance UID 1049392123 copiado al portapapeles');
+        showToast('Binance UID 1049392123 copiado al portapapeles');
       } catch (err) {
         prompt('Copia manualmente el Binance UID:', text);
       }
@@ -1170,7 +1187,7 @@ Portal Oficial: https://shokun123.github.io/leadrescue-ai/
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
 
-      showToast(`✓ Reporte ejecutivo generado para ${company}`);
+      showToast(`Reporte ejecutivo generado para ${company}`);
     }
 
     function confirmPayment() {
@@ -1188,7 +1205,7 @@ Portal Oficial: https://shokun123.github.io/leadrescue-ai/
       status.classList.remove('hidden');
 
       setTimeout(() => {
-        status.innerText = '✓ ¡Pago verificado con éxito! Descargando tu Suite Pro...';
+        status.innerText = 'Pago verificado con éxito. Descargando tu Suite Pro...';
         status.className = 'text-[11px] text-center mt-2.5 text-emerald-400 font-bold font-mono';
         
         // Trigger Instant Delivery of Code Suite Package
@@ -1254,11 +1271,11 @@ function analyzeLeadWithGemini(message, apiKey) {
 
 function sendTelegramAlert(token, chatId, name, email, phone, analysis) {
   const url = "https://api.telegram.org/bot" + token + "/sendMessage";
-  const text = "⚡ *NUEVO LEAD RESCATADO EN <60s*\\n\\n" +
-               "👤 *Nombre:* " + name + "\\n" +
-               "📧 *Email:* " + email + "\\n" +
-               "📞 *Teléfono:* " + phone + "\\n\\n" +
-               "🧠 *Diagnóstico IA:*\\n" + analysis;
+  const text = "[ALERTA] *NUEVO LEAD RESCATADO EN <60s*\\n\\n" +
+               "*Nombre:* " + name + "\\n" +
+               "*Email:* " + email + "\\n" +
+               "*Teléfono:* " + phone + "\\n\\n" +
+               "*Diagnóstico IA:*\\n" + analysis;
   UrlFetchApp.fetch(url, {
     method: "post",
     contentType: "application/json",
@@ -1300,13 +1317,13 @@ contacta directamente con tu identificador de transacción en Binance.
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
 
-        showToast('✓ Suite Pro descargada exitosamente');
+        showToast('Suite Pro descargada exitosamente');
       }, 1300);
     }
 
     function shareOnTwitter() {
       const leak = document.getElementById('leakMonthly').innerText;
-      const text = encodeURIComponent(`Acabo de auditar la latencia de respuesta de mi web con LeadRescue AI y tardar en responder prospectos le cuesta a un negocio aprox. ${leak} cada mes 😱.\n\nCalcula tu fuga de capital gratis en 30 segundos:`);
+      const text = encodeURIComponent(`Acabo de auditar la latencia de respuesta de mi web con LeadRescue AI y tardar en responder prospectos le cuesta a un negocio aprox. ${leak} cada mes.\n\nCalcula tu fuga de capital gratis en 30 segundos:`);
       const url = `https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent('https://shokun123.github.io/leadrescue-ai/')}`;
       window.open(url, '_blank');
     }
