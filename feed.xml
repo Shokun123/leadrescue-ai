@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>LeadRescue AI - Speed to Lead Insights</title>
+  <link>https://shokun123.github.io/leadrescue-ai/</link>
+  <description>Auditorías automáticas de latencia y herramientas de rescate de prospectos para negocios B2B.</description>
+  <language>es</language>
+  <item>
+    <title>¿Cuánto dinero pierde tu negocio al tardar más de 5 minutos en responder leads?</title>
+    <link>https://shokun123.github.io/leadrescue-ai/</link>
+    <description>Descubre la fuga financiera de tu formulario web en tiempo real y calcula tu ROI con LeadRescue AI.</description>
+    <pubDate>Wed, 30 Sep 2026 09:30:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Automatización Speed-to-Lead con IA a coste $0 de servidores</title>
+    <link>https://shokun123.github.io/leadrescue-ai/</link>
+    <description>Cómo responder a prospectos en menos de 45 segundos usando Google Apps Script y Gemini API.</description>
+    <pubDate>Wed, 30 Sep 2026 10:00:00 GMT</pubDate>
+  </item>
+</channel>
+</rss>
