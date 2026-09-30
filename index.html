@@ -164,6 +164,19 @@
           <p class="text-[11px] text-center text-gray-400 mt-2">
             Descarga instantánea: Plantilla Webhook Google Apps Script + Make.com Blueprint + Prompt Calibrado.
           </p>
+
+          <!-- Bucle Viral de Compartición Directa (PLG) -->
+          <div class="mt-5 pt-4 border-t border-brand-border/60 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <span class="text-xs text-gray-400 font-medium">Comparte tu diagnóstico:</span>
+            <div class="flex gap-2 w-full sm:w-auto">
+              <button onclick="shareOnTwitter()" class="flex-1 sm:flex-initial bg-[#1DA1F2]/10 hover:bg-[#1DA1F2]/20 text-[#1DA1F2] border border-[#1DA1F2]/30 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition">
+                <span>🐦</span> Compartir en X
+              </button>
+              <button onclick="shareOnWhatsApp()" class="flex-1 sm:flex-initial bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition">
+                <span>💬</span> WhatsApp
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -363,6 +376,20 @@
         a.click();
         document.body.removeChild(a);
       }, 1200);
+    }
+
+    function shareOnTwitter() {
+      const leak = document.getElementById('leakMonthly').innerText;
+      const text = encodeURIComponent(`Acabo de auditar mi formulario web con LeadRescue AI y la lentitud en responder prospectos le cuesta a una empresa aprox. ${leak} cada mes 😱.\n\nCalcula tu fuga gratis en 30 segundos:`);
+      const url = `https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent(window.location.href)}`;
+      window.open(url, '_blank');
+    }
+
+    function shareOnWhatsApp() {
+      const leak = document.getElementById('leakMonthly').innerText;
+      const text = encodeURIComponent(`Calculé en LeadRescue AI que tardar en responder prospectos cuesta más de ${leak} al mes en ventas perdidas. Audita gratis tu negocio aquí: ${window.location.href}`);
+      const url = `https://api.whatsapp.com/send?text=${text}`;
+      window.open(url, '_blank');
     }
 
     // Inicializar cálculo al cargar
