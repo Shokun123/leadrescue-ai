@@ -1,0 +1,13 @@
+{
+  "name": "leadrescue-ai-micro-saas",
+  "version": "1.0.0",
+  "description": "Micro-SaaS autónomo de auditoría de latencia de leads con monetización directa en Binance Pay ($0 inversión)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["micro-saas", "binance-pay", "ai-audit", "zero-capital"],
+  "author": "Autonomous Revenue Agent",
+  "license": "MIT"
+}
