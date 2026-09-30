@@ -28,3 +28,12 @@ Abre tu navegador en `http://localhost:3000`.
 - **Ticket:** $19.00 USDT.
 - **Coste de Servidor:** $0.00 USD.
 - **Margen Neto:** 100%.
+
+---
+
+## 🌐 Suite Completa de Herramientas ($0 Overhead)
+
+* 🗺️ **[Google Maps B2B Lead Extractor](https://github.com/Shokun123/google-maps-b2b-lead-scraper)** — Extractor de comercios locales, emails y teléfonos con datasets gratuitos listos para descargar.
+* 🔍 **[AI PR Code Reviewer & Security Linter](https://github.com/Shokun123/ai-pr-reviewer-action)** — GitHub Action oficial de CI/CD para auditar código y prevenir fugas de credenciales.
+* 💳 **Patrocinio & Cobros:** Binance Pay UID: `1049392123` (`User-79a91`).
+

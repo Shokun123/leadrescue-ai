@@ -1,0 +1,25 @@
+name: AI PR Code Review & Security Audit
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run AI PR Reviewer
+        uses: Shokun123/ai-pr-reviewer-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          fail-on-critical: false
