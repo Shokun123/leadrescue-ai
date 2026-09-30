@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shokun123.github.io/leadrescue-ai/sitemap.xml
