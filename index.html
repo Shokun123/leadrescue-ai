@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es" class="dark bg-[#08090C] text-[#F8FAFC]">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,34 +45,106 @@
     }
   </script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
+    
+    /* Base de tipografía nítida y legible */
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: #08090C;
-      color: #E2E8F0;
+      color: #F8FAFC;
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      font-size: 15px;
+      line-height: 1.6;
     }
     .font-mono {
       font-family: 'JetBrains Mono', monospace;
     }
+
+    /* Reglas de Alto Contraste para textos */
+    .text-gray-300 { color: #F1F5F9 !important; }
+    .text-gray-400 { color: #CBD5E1 !important; font-weight: 500 !important; }
+    .text-gray-500 { color: #A0AEC0 !important; font-weight: 500 !important; }
+    .text-gray-600 { color: #CBD5E1 !important; }
+
+    /* Corrección de micro-fuentes para lectura cómoda */
+    .text-\[10px\] { font-size: 12px !important; line-height: 1.25rem !important; }
+    .text-\[11px\] { font-size: 13px !important; line-height: 1.35rem !important; }
+    .text-xs { font-size: 13px !important; line-height: 1.35rem !important; }
+    .text-sm { font-size: 14.5px !important; line-height: 1.5rem !important; }
+
+    /* Inputs, Selects y Textareas con contraste y tamaño legible */
+    input, select, textarea {
+      color: #FFFFFF !important;
+      background-color: #0D111A !important;
+      border-color: #334155 !important;
+      font-size: 14px !important;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #94A3B8 !important;
+      opacity: 1 !important;
+    }
+    select option {
+      background-color: #0D111A !important;
+      color: #FFFFFF !important;
+      font-size: 14px !important;
+      padding: 10px !important;
+    }
+
+    /* Badges y chips con contraste reforzado */
+    .industry-chip p {
+      color: #FFFFFF !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+    }
+    .industry-chip span {
+      color: #CBD5E1 !important;
+      font-size: 12px !important;
+    }
+    .industry-chip:hover {
+      border-color: #F0B90B !important;
+      background-color: #1A202C !important;
+    }
+    .industry-chip.active, button[id^="btn-"].border-brand-yellow\/40 {
+      border-color: #F0B90B !important;
+      background-color: rgba(240, 185, 11, 0.18) !important;
+    }
+
+    /* Contraste en tarjetas */
+    .bg-brand-card {
+      background-color: #0F131D !important;
+      border-color: #2D3748 !important;
+    }
+    .border-brand-border {
+      border-color: #2D3748 !important;
+    }
+
+    html {
+      background-color: #08090C !important;
+      color: #F8FAFC !important;
+    }
+
     .gradient-mesh {
-      background: radial-gradient(circle at 50% 0%, rgba(240, 185, 11, 0.12) 0%, rgba(8, 9, 12, 0) 65%),
-                  radial-gradient(circle at 10% 30%, rgba(239, 68, 68, 0.06) 0%, rgba(8, 9, 12, 0) 50%),
-                  radial-gradient(circle at 90% 70%, rgba(16, 185, 129, 0.05) 0%, rgba(8, 9, 12, 0) 50%);
+      background-color: #08090C !important;
+      background-image: radial-gradient(circle at 50% 0%, rgba(240, 185, 11, 0.14) 0%, rgba(8, 9, 12, 1) 70%),
+                        radial-gradient(circle at 10% 30%, rgba(239, 68, 68, 0.06) 0%, rgba(8, 9, 12, 1) 50%),
+                        radial-gradient(circle at 90% 70%, rgba(16, 185, 129, 0.06) 0%, rgba(8, 9, 12, 1) 50%) !important;
     }
     .glass-card {
-      background: rgba(18, 21, 29, 0.85);
+      background: rgba(18, 21, 29, 0.92);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
     }
     .glass-card:hover {
-      border-color: rgba(240, 185, 11, 0.3);
+      border-color: rgba(240, 185, 11, 0.4);
     }
     /* Slider Custom Styling */
     input[type=range] {
       -webkit-appearance: none;
-      background: #1A1F2C;
+      background: #1E293B;
       height: 8px;
       border-radius: 9999px;
       outline: none;
@@ -102,7 +174,7 @@
     }
   </style>
 </head>
-<body class="min-h-screen gradient-mesh flex flex-col justify-between selection:bg-brand-yellow selection:text-black">
+<body class="min-h-screen bg-[#08090C] text-[#F8FAFC] gradient-mesh flex flex-col justify-between selection:bg-brand-yellow selection:text-black">
 
   <!-- Header -->
   <header class="border-b border-brand-border/60 sticky top-0 bg-[#08090C]/85 backdrop-blur-md z-40 px-4 sm:px-8 py-3.5 transition-all">
@@ -419,8 +491,8 @@
           </div>
         </div>
 
-        <blockquote class="text-sm sm:text-base text-gray-300 italic border-l-2 border-brand-yellow pl-4 my-4 leading-relaxed">
-          "Las empresas que intentan contactar a un lead potencial <strong class="text-white not-italic font-bold">dentro de los primeros 5 minutos</strong> tienen <strong class="text-brand-yellow not-italic font-bold">21 veces más probabilidades</strong> de calificarlo que las que esperan 30 minutos, y un <strong class="text-red-400 not-italic font-bold">391% más de probabilidad de conversión</strong> que tras 1 hora. Pasadas las 3 horas, el lead prácticamente ha olvidado la solicitud o ha contratado a la competencia."
+        <blockquote class="text-sm sm:text-base text-slate-100 font-medium border-l-4 border-brand-yellow pl-5 my-4 leading-relaxed bg-black/30 p-4 rounded-r-xl">
+          "Las empresas que intentan contactar a un lead potencial <strong class="text-white font-extrabold bg-brand-yellow/20 px-1.5 py-0.5 rounded">dentro de los primeros 5 minutos</strong> tienen <strong class="text-brand-yellow font-extrabold">21 veces más probabilidades</strong> de calificarlo que las que esperan 30 minutos, y un <strong class="text-red-400 font-extrabold bg-red-500/10 px-1.5 py-0.5 rounded border border-red-500/20">391% más de probabilidad de conversión</strong> que tras 1 hora. Pasadas las 3 horas, el prospecto prácticamente ha olvidado la solicitud o ha contratado a la competencia."
         </blockquote>
 
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-brand-border/60 text-center font-mono">
