@@ -874,15 +874,18 @@
       <!-- Confirmation Form -->
       <div class="mt-5 pt-4 border-t border-brand-border">
         <label class="block text-xs font-bold text-gray-300 mb-2 uppercase tracking-wide">
-          Confirma tu Pago para Descargar Inmediatamente:
+          Confirma tu Pago para Recibir Acceso Inmediato:
         </label>
-        <div class="flex gap-2">
-          <input type="text" id="txInput" placeholder="Nº Comprobante BCP / TxID / Pay ID de Binance"
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input type="text" id="txInput" placeholder="Nº Comprobante BCP / TxID / Pay ID (opcional)"
             class="flex-1 bg-[#08090C] border border-brand-border rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-brand-yellow font-mono">
-          <button onclick="confirmPayment()" class="bg-gradient-to-r from-brand-yellow to-amber-400 hover:from-yellow-400 hover:to-brand-yellow text-black font-extrabold px-4 py-2.5 rounded-xl text-xs transition shadow-md">
-            Validar y Descargar
+          <button onclick="confirmOnWhatsApp()" class="bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-black font-extrabold px-4 py-2.5 rounded-xl text-xs transition shadow-md flex items-center justify-center gap-1.5 whitespace-nowrap">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.17 1.6 5.99L0 24l6.23-1.63a11.95 11.95 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.12-6.22-3.52-8.43zM12.06 21.87h-.01c-1.8 0-3.56-.48-5.11-1.39l-.37-.22-3.79.99 1.01-3.69-.24-.38a9.92 9.92 0 0 1-1.52-5.21c0-5.49 4.47-9.96 9.97-9.96 2.66 0 5.16 1.04 7.04 2.92a9.92 9.92 0 0 1 2.92 7.04c0 5.49-4.47 9.9-9.9 9.9z"/></svg> Confirmar en WhatsApp
           </button>
         </div>
+        <p class="text-[11px] text-gray-400 mt-2 text-center">
+          Al pulsar el botón se abrirá WhatsApp con el soporte oficial para verificar tu abono y entregarte tu acceso al instante.
+        </p>
         <p id="paymentStatus" class="text-[11px] text-center mt-2.5 hidden font-mono"></p>
       </div>
     </div>
@@ -1335,6 +1338,20 @@ Portal Oficial: https://shokun123.github.io/leadrescue-ai/
       URL.revokeObjectURL(url);
 
       showToast(`Reporte ejecutivo generado para ${company}`);
+    }
+
+    function confirmOnWhatsApp() {
+      const tx = document.getElementById('txInput').value.trim();
+      let msg = "Hola, acabo de realizar el pago para la Suite Pro de LeadRescue AI.";
+      if (tx) {
+        msg += ` Mi número de comprobante / referencia es: ${tx}.`;
+      }
+      msg += " Adjunto aquí mi comprobante de transferencia para activar mi acceso.";
+      
+      const phone = "59175549155";
+      const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+      showToast('Abriendo WhatsApp para confirmar tu pago...');
     }
 
     function confirmPayment() {
